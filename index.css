@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #3F3D56;
+    font-family: 'flamenco';
+}
+.container-menu{
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 150px;
+}
+.logo{
+    width: 50%;
+}
+.menu{
+    display: flex;
+    width: 50%;
+    font-size: 25px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 15px;
+}
+li{
+    color: #3F3D56;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    margin-right: 25px;
+}
+a:focus{
+    color: #3F3D56;
+}
+.container-nosotros{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    margin-top: 30px;
+}
+.nostros{
+    width: 60%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.imagen{
+    display: flex;
+    justify-content: flex-end;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+    background-position: center;
+}
+.imgNosotros{
+    margin-right: 30px;
+    border-radius: 10px;
+    width: 100%;
+    height: 60%;
+}
+h2{
+    font-size: 60px;
+}
+p{
+    font-size: 40px;
+}
+.container-conocimientos{
+    text-align: center;
+}
+.imgIconos{
+    display: flex;
+    justify-content: space-around;
+}
