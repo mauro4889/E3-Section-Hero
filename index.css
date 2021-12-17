@@ -3,12 +3,16 @@ body{
     background-color: rgba(0, 0, 0, 0.1);
     color: #3F3D56;
     font-family: 'flamenco';
+    margin: 0px;
+    padding: 0px;
 }
 .container-menu{
     display: flex;
     border-bottom: 1px solid black;
     width: 100%;
     height: 150px;
+    background-color: azure;
+    margin-top: 0px;
 }
 .logo{
     width: 50%;
@@ -32,15 +36,32 @@ li{
 a{
     text-decoration: none;
     margin-right: 25px;
+    position: relative;
 }
-a:focus{
+a:visited{
     color: #3F3D56;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #3F3D56;
+    width: 100%;
+    height: 3px;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+a:hover::after{
+    transform: scaleX(1);
 }
 .container-nosotros{
     width: 100%;
     height: 800px;
     display: flex;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 .nostros{
     width: 60%;
@@ -74,4 +95,81 @@ p{
 .imgIconos{
     display: flex;
     justify-content: space-around;
+}
+.container-ventajas{
+   display: flex;
+   flex-direction: column;
+   margin-top: 15%;
+   width: 100%;
+}
+.ventaja-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ventaja-intro p{
+    text-align: justify;
+    margin: auto 10%;
+}
+.ventaja-iconos{
+    margin: 5% 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ventaja-iconos figure{
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+figure img{
+    width: 30%;
+    height: 30%;
+}
+figure p{
+    font-size: 150%;
+    text-align: justify;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+}
+.work-step{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% auto;
+}
+.work-step figure{
+    margin-top: 0;
+    margin-left: 10%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.work-step figure img{
+    margin: 0 auto;
+}
+.work-step figure p{
+    font-size: 95%;
+}
+@media (min-width: 768px){
+    .container-menu{
+        width:100vw%;
+        height: 20%;
+    }
 }

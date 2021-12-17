@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #3F3D56;
+    font-family: 'flamenco';
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    position: fixed;
+    width: 100%;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    width: 100%;
+    height: 10%;
+    background-color: azure;
+}
+figure{
+    margin: 0;
+    width: 25%;
+    height: 10%;
+}
+figure img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.nav-menu{
+    width: 75%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.nav-menu li{
+    margin-right: 5%;
+    margin-top: 12%;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: #3F3D56;
+    position: relative;
+}
+a:visited{
+    color: #3F3D56;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #3F3D56;
+    width: 100%;
+    height: 3px;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+a:hover::after{
+    transform: scaleX(1);
+}
+.main-nosotros{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 6em;
+}
+.nosotros h2{
+    text-align: center;
+}
+.nosotros p{
+    text-align: justify;
+    margin: auto 5%;
+}
+.imagen{
+    width: 100%;
+}
+.imagen img{
+   width: 100%;
+}
